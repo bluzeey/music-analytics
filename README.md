@@ -1,69 +1,96 @@
-# Welcome to your Lovable project
+# Streamify Dashboard - SpeedyBrand
 
-## Project info
+- **Hosted Link** - [https://streamify-speedy-labs.vercel.app/](https://streamify-speedy-labs.vercel.app/)
+- Desktop : 
+   - <img width="1792" alt="Screenshot 2024-09-09 at 7 54 27 PM" src="https://github.com/user-attachments/assets/c65a3c3f-2f9c-4b24-b950-ca2c6e644c6a">
+   - <img width="1792" alt="Screenshot 2024-09-09 at 7 54 19 PM" src="https://github.com/user-attachments/assets/3b12bd69-0d00-4d30-a0dd-149cd6c678a0">
 
-**URL**: https://lovable.dev/projects/4a871551-ac89-4474-a1ce-242193047a21
+## Thought Process
+The primary objective of this project was to build an analytics dashboard for a fictional music streaming service, "Streamify," that provides key insights into user activity, revenue generation, and content performance. My approach focused on creating a user-friendly, responsive, and visually appealing dashboard using modern web technologies.
 
-## How can I edit this code?
+### Key factors I considered:
+- **UI/UX**: The design should be clean, minimal, and adaptable to various screen sizes. Usability and clarity were top priorities.
+- **Performance**: Optimizing load times and avoiding unnecessary re-renders were crucial. I implemented lazy loading and code-splitting techniques to improve performance.
+- **Interactivity**: I incorporated interactive charts and tables that enable the user to hover over data points for detailed insights and perform sorting and filtering operations.
 
-There are several ways of editing your application.
+### Additional Considerations:
+- **Mocked Data**: To simulate real-time analytics, I created realistic mock data for user activity, revenue breakdown, and song streaming history.
+- **Chart Interactions**: Users can interact with the charts, hover to see details, and filter the data based on selections.
 
-**Use Lovable**
+## Instructions to Run
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4a871551-ac89-4474-a1ce-242193047a21) and start prompting.
+1. **Clone the repository:**
 
-Changes made via Lovable will be committed automatically to this repo.
+   ```bash
+   git clone <repository-link>
 
-**Use your preferred IDE**
+2. **Install dependencies:**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+   ```bash
+   npm install
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+3. **Run the development server:**
 
-Follow these steps:
+   ```bash
+   npm start
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+4. **View the application in your browser:**
+   Open http://localhost:5173 to view the app locally.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+**Deploying the app (optional):**
+You can deploy this app using services like Vercel or Netlify by connecting your repository and following the hosting service’s deployment instructions.
 
-# Step 3: Install the necessary dependencies.
-npm i
+##   References/Libraries Used
+- React Tremor - Used for creating the interactive charts and visualizations (e.g., User Growth, Revenue Distribution, Top Streamed Songs).
+[Tremor React Library Documentation](https://tremor.so/docs/getting-started/installation)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+- shadcn/ui - Utilized for the Data Table, sorting/filtering functionalities, and UI components.
+[shadcn UI Library Documentation](https://ui.shadcn.com/docs)
 
-**Edit a file directly in GitHub**
+- Tailwind CSS - Used as the primary CSS framework for responsive design and styling.
+[Tailwind CSS Documentation](https://v2.tailwindcss.com/docs)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- React - For building the single-page application.
+[React Documentation](https://react.dev/learn/installation)
 
-**Use GitHub Codespaces**
+- React Context API - For state management to manage global state across the dashboard.
+[React Context API Documentation](https://reactjs.org/docs/context.html)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-## What technologies are used for this project?
+## Building a Music Streaming Analytics Dashboard
 
-This project is built with .
+**Dashboard Overview:**
+This is a single-page application (SPA) that includes the following sections:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+**Key Metrics:**
+- Total Users
+- Active Users
+- Total Streams
+- Revenue
+- Top Artist
 
-## How can I deploy this project?
+**Data Visualization:**
+- User Growth Chart (line chart)
+- Revenue Distribution (pie chart)
+- Top 5 Streamed Songs (bar chart)
 
-Simply open [Lovable](https://lovable.dev/projects/4a871551-ac89-4474-a1ce-242193047a21) and click on Share -> Publish.
+**Data Table:**
+- List of recent streams with columns for Song Name, Artist, Date Streamed, Stream Count, and User ID.
 
-## I want to use a custom domain - is that possible?
+**User Interaction Features:**
+- Sorting & Filtering: The data table allows sorting by Date or Stream Count and filtering by Artist or Song Name.
+- Chart Interactions: Hovering over points in the charts displays exact numbers, and clicking on revenue sources filters the data table.
 
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+**Bonus Features:**
+- Responsive Design: The dashboard is fully responsive and adapts well to different screen sizes.
+- Optimized Performance: Implemented lazy loading and code splitting to improve load times and minimize re-renders.
+
+## Screenshots
+- Mobile/iPhone:
+  - <img src="https://github.com/user-attachments/assets/f9e41d8e-5a53-460f-90a6-6b8207e9339c" alt="mobileScreenshot1" width="600"/>
+  - <img src="https://github.com/user-attachments/assets/090b0c5c-9323-4c04-8b71-eb9f2e361c51" alt="mobileScreenshot2" width="600"/>
+
+- Tablet/iPad: 
+![IMG_F1D2EDB28C68-1](https://github.com/user-attachments/assets/1dcf9746-40ef-448e-a39d-9d20ea7bbd46)
+![IMG_6875F61808DA-1](https://github.com/user-attachments/assets/8f7353e9-d36c-45e9-8370-aa4fc0b2503c)
+
